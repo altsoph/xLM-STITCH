@@ -43,7 +43,7 @@ def ensure_probe_caches(configs, args: argparse.Namespace) -> None:
 
 
 def run_postprocessing(smoke: bool) -> None:
-    py = str(ROOT / '.venv' / 'Scripts' / 'python.exe')
+    py = sys.executable
     scripts = []
     if not smoke:
         scripts.append(['scripts/refresh_mlm_probe_holdout_transfer_torch.py'])
