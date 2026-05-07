@@ -54,5 +54,3 @@ Paper-facing artifacts:
   - MLM `lens_decoding`
   - PCA figure generation
   - MLM transfer refresh
-- CLM benchmark uses the trimmed-prefix dataset variant from the paper.
-- This repo does not read or reuse experiment artifacts from the main research repo.
