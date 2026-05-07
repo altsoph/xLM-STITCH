@@ -1,0 +1,19 @@
+run_id: phase1_bert_smoke
+phase: phase1
+model:
+  name: bert-base-uncased
+  family: auto
+  device: cpu
+  precision: fp32
+  output_attentions: false
+dataset:
+  name: handcrafted_debug
+  split: smoke
+  max_examples: 20
+  language: en
+task_family: clean_passthrough
+seed: 42
+batch_size: 8
+precision: fp32
+output_dir: results/exploratory/phase1
+artifact_level: exploratory

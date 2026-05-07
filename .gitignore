@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+results/
+reports/
+paper/figures/*.png
+paper/figures/*.pdf
+paper/tables/*.md
+paper/tables/*.json
+paper/figure_data/
+*.log

@@ -1,0 +1,37 @@
+# Default model matrix (Section 11 of implementation plan)
+
+legacy_anchors:
+  - name: albert-base-v2
+    family: encoder_mlm
+  - name: bert-base-uncased
+    family: encoder_mlm
+
+modern_encoders:
+  - name: roberta-base
+    family: encoder_mlm
+  - name: microsoft/deberta-v3-base
+    family: encoder_mlm
+  - name: answerdotai/ModernBERT-base
+    family: encoder_mlm
+  - name: xlm-roberta-base
+    family: encoder_mlm
+
+small_decoders:
+  - name: distilgpt2
+    family: decoder_only
+  - name: EleutherAI/pythia-160m
+    family: decoder_only
+  - name: HuggingFaceTB/SmolLM2-135M
+    family: decoder_only
+
+later_extensions:
+  - name: facebook/bart-base
+    family: encoder_decoder
+  - name: google/t5-small
+    family: encoder_decoder
+  - name: google/electra-small-discriminator
+    family: encoder_mlm
+  - name: gpt2
+    family: decoder_only
+  - name: EleutherAI/pythia-410m
+    family: decoder_only

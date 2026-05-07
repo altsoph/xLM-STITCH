@@ -1,0 +1,470 @@
+{
+  "model_inventory": {
+    "headers": [
+      "Family",
+      "Model",
+      "Layers",
+      "ParamsM"
+    ],
+    "rows": [
+      [
+        "MLM",
+        "ALBERT",
+        12,
+        11.3
+      ],
+      [
+        "MLM",
+        "BERT",
+        12,
+        109.5
+      ],
+      [
+        "MLM",
+        "RoBERTa",
+        12,
+        124.7
+      ],
+      [
+        "MLM",
+        "ModernBERT",
+        22,
+        149.7
+      ],
+      [
+        "MLM",
+        "XLM-R",
+        12,
+        278.3
+      ],
+      [
+        "CLM",
+        "distilgpt2",
+        6,
+        81.9
+      ],
+      [
+        "CLM",
+        "gpt2",
+        12,
+        124.4
+      ],
+      [
+        "CLM",
+        "pythia-160m",
+        12,
+        162.3
+      ],
+      [
+        "CLM",
+        "pythia-410m",
+        24,
+        405.3
+      ],
+      [
+        "CLM",
+        "SmolLM2-135M",
+        30,
+        134.5
+      ],
+      [
+        "CLM",
+        "SmolLM2-360M",
+        32,
+        361.8
+      ],
+      [
+        "CLM",
+        "Qwen2.5-0.5B",
+        24,
+        494.0
+      ],
+      [
+        "CLM",
+        "Llama-3.2-1B",
+        16,
+        1235.8
+      ],
+      [
+        "CLM",
+        "gemma-3-1b",
+        26,
+        999.9
+      ]
+    ]
+  },
+  "mlm_repair": {
+    "headers": [
+      "Model",
+      "Final readout",
+      "Clean change",
+      "Single repair",
+      "Adj swap both",
+      "Dist-8 both",
+      "Sim indep both"
+    ],
+    "rows": [
+      [
+        "ALBERT",
+        97.2,
+        2.4,
+        21.9,
+        0.8,
+        6.3,
+        4.8
+      ],
+      [
+        "BERT",
+        91.5,
+        7.5,
+        26.1,
+        0.4,
+        8.8,
+        6.8
+      ],
+      [
+        "RoBERTa",
+        99.1,
+        1.0,
+        44.4,
+        1.5,
+        21.2,
+        19.7
+      ],
+      [
+        "ModernBERT",
+        98.7,
+        1.1,
+        28.3,
+        0.3,
+        9.6,
+        8.0
+      ],
+      [
+        "XLM-R",
+        99.3,
+        0.6,
+        25.2,
+        0.9,
+        9.0,
+        6.4
+      ]
+    ]
+  },
+  "mlm_depth": {
+    "headers": [
+      "Model",
+      "MLP holdout",
+      "Content->Function",
+      "Function->Content"
+    ],
+    "rows": [
+      [
+        "ALBERT",
+        99.64,
+        89.0,
+        80.4
+      ],
+      [
+        "BERT",
+        99.52,
+        76.3,
+        64.3
+      ],
+      [
+        "RoBERTa",
+        99.67,
+        87.2,
+        73.1
+      ],
+      [
+        "ModernBERT",
+        99.72,
+        88.3,
+        77.8
+      ],
+      [
+        "XLM-R",
+        99.93,
+        92.2,
+        87.8
+      ]
+    ]
+  },
+  "mlm_control_change": {
+    "headers": [
+      "Model",
+      "Freeze CLS",
+      "Freeze SEP",
+      "Freeze both",
+      "Zero CLS",
+      "Zero SEP",
+      "Zero both",
+      "Zero ordinary"
+    ],
+    "rows": [
+      [
+        "ALBERT",
+        98.6,
+        93.8,
+        99.4,
+        87.2,
+        97.8,
+        97.3,
+        26.8
+      ],
+      [
+        "BERT",
+        9.9,
+        21.9,
+        23.4,
+        7.5,
+        35.7,
+        44.8,
+        19.5
+      ],
+      [
+        "RoBERTa",
+        36.5,
+        9.4,
+        46.7,
+        39.6,
+        12.6,
+        56.6,
+        17.3
+      ],
+      [
+        "ModernBERT",
+        97.5,
+        98.0,
+        100.0,
+        18.0,
+        38.0,
+        48.8,
+        17.6
+      ],
+      [
+        "XLM-R",
+        59.3,
+        23.1,
+        58.0,
+        47.4,
+        17.8,
+        50.8,
+        19.8
+      ]
+    ]
+  },
+  "clm_readout": {
+    "headers": [
+      "Model",
+      "MLP holdout",
+      "Late next-token readout",
+      "Late right-edge recovery",
+      "Final shifted-input recovery"
+    ],
+    "rows": [
+      [
+        "distilgpt2",
+        99.98,
+        55.4,
+        56.2,
+        20.5
+      ],
+      [
+        "gpt2",
+        98.61,
+        59.4,
+        60.1,
+        24.2
+      ],
+      [
+        "pythia-160m",
+        99.94,
+        46.9,
+        47.4,
+        25.5
+      ],
+      [
+        "pythia-410m",
+        99.55,
+        74.1,
+        75.4,
+        29.0
+      ],
+      [
+        "SmolLM2-135M",
+        97.34,
+        66.6,
+        65.3,
+        29.3
+      ],
+      [
+        "SmolLM2-360M",
+        96.08,
+        69.7,
+        69.1,
+        31.2
+      ],
+      [
+        "Qwen2.5-0.5B",
+        99.41,
+        58.2,
+        60.4,
+        30.2
+      ],
+      [
+        "Llama-3.2-1B",
+        99.96,
+        66.8,
+        65.5,
+        28.9
+      ],
+      [
+        "gemma-3-1b",
+        98.95,
+        73.6,
+        74.9,
+        29.8
+      ]
+    ]
+  },
+  "clm_control_change": {
+    "headers": [
+      "Model",
+      "Freeze first",
+      "Zero first",
+      "Zero ordinary"
+    ],
+    "rows": [
+      [
+        "distilgpt2",
+        89.5,
+        43.9,
+        23.5
+      ],
+      [
+        "gpt2",
+        95.9,
+        50.6,
+        26.7
+      ],
+      [
+        "pythia-160m",
+        75.6,
+        66.0,
+        25.3
+      ],
+      [
+        "pythia-410m",
+        75.6,
+        57.0,
+        29.0
+      ],
+      [
+        "SmolLM2-135M",
+        94.4,
+        53.3,
+        25.9
+      ],
+      [
+        "SmolLM2-360M",
+        94.5,
+        62.9,
+        27.5
+      ],
+      [
+        "Qwen2.5-0.5B",
+        89.8,
+        78.8,
+        29.5
+      ],
+      [
+        "Llama-3.2-1B",
+        88.3,
+        73.8,
+        21.0
+      ],
+      [
+        "gemma-3-1b",
+        69.6,
+        69.8,
+        21.7
+      ]
+    ]
+  },
+  "clm_repair": {
+    "headers": [
+      "Model",
+      "Single-token recovery",
+      "Adjacent two-token recovery",
+      "Distance-8 two-token recovery",
+      "Simulated independent double recovery"
+    ],
+    "rows": [
+      [
+        "distilgpt2",
+        19.9,
+        0.0,
+        5.6,
+        4.0
+      ],
+      [
+        "gpt2",
+        24.1,
+        0.0,
+        8.0,
+        5.8
+      ],
+      [
+        "pythia-160m",
+        24.6,
+        0.1,
+        7.6,
+        6.0
+      ],
+      [
+        "pythia-410m",
+        29.0,
+        0.0,
+        9.7,
+        8.4
+      ],
+      [
+        "SmolLM2-135M",
+        28.2,
+        0.4,
+        12.1,
+        8.0
+      ],
+      [
+        "SmolLM2-360M",
+        31.6,
+        0.3,
+        12.2,
+        10.0
+      ],
+      [
+        "Qwen2.5-0.5B",
+        30.6,
+        0.4,
+        13.0,
+        9.4
+      ],
+      [
+        "Llama-3.2-1B",
+        30.0,
+        0.1,
+        11.1,
+        9.0
+      ],
+      [
+        "gemma-3-1b",
+        29.8,
+        0.7,
+        10.8,
+        8.9
+      ]
+    ]
+  }
+}
