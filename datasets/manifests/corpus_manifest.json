@@ -1,9 +1,5 @@
 {
   "seed": 42,
-  "sources": {
-    "weak_recovered": 1231,
-    "corpus_base": 36982
-  },
   "splits": {
     "smoke": 200,
     "dev": 500,
