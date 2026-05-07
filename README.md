@@ -47,9 +47,6 @@ Paper-facing artifacts:
 - `paper/figures/`
 - `paper/tables/`
 
-Drift report:
-- `reports/drift/paper_drift_report.md`
-
 ## Notes on efficiency
 
 - Probe feature caches are materialized once per model and reused by:
