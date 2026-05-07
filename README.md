@@ -29,24 +29,19 @@ Use requirements.txt to build the `.venv`.
 
 ## Smoke run
 
-Runs one MLM and one CLM end-to-end, then builds paper artifacts and a drift report.
+Runs one MLM and one CLM end-to-end, then builds paper artifacts.
 ```shell
 python ./scripts/run_paper_repro.py smoke --device cuda
 ```
 
 ## Full run
 
-Runs the full benchmark paper pipeline for all paper models, builds paper artifacts, and writes a drift report.
-```powershell
-.\.venv\Scripts\python.exe .\scripts\run_paper_repro.py full --device cuda
+Runs the full benchmark paper pipeline for all paper models, builds paper artifacts.
+```shell
+python ./scripts/run_paper_repro.py full --device cuda
 ```
 
 ## Outputs
-
-Benchmark results:
-- `results/exploratory/phase1_benchmark/`
-- `results/exploratory/phase2_benchmark/`
-- `results/exploratory/phase4_benchmark/`
 
 Paper-facing artifacts:
 - `paper/figures/`
